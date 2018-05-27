@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let chart = Pie(center: view.center, sections: 8, radius: 150, separation: 8)
+        let chart = Pie(center: view.center, radius: 75, separation: 4, values: [2, 3, 4, 5, 2])
         view.addSubview(chart)
     }
 
