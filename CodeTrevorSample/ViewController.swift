@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        view.createBackground(color: UIColor.soothingBreeze)
+        
         let chart = Pie(center: view.center, radius: 150, values: [2, 4, 2, 8, 10])
         chart.separation = 0
         chart.labels = ["Bitcoin", "Ethereum", "Litecoin", "Bitcoin Cash", "TrevCoin"]
