@@ -16,6 +16,8 @@
 		3B42172A20B6099300415CE7 /* CodeTrevorSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42172920B6099300415CE7 /* CodeTrevorSampleUITests.swift */; };
 		3B42175520B60ACA00415CE7 /* CodeTrevor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B42175420B60ACA00415CE7 /* CodeTrevor.framework */; };
 		3B777ECF20BBCC100055B1B1 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B777ECE20BBCC0F0055B1B1 /* OpenSans-Regular.ttf */; };
+		3B777ED820BDC8BF0055B1B1 /* CodeTrevor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B42175420B60ACA00415CE7 /* CodeTrevor.framework */; };
+		3B777ED920BDC8BF0055B1B1 /* CodeTrevor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B42175420B60ACA00415CE7 /* CodeTrevor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				3B777ED920BDC8BF0055B1B1 /* CodeTrevor.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B42175520B60ACA00415CE7 /* CodeTrevor.framework in Frameworks */,
+				3B777ED820BDC8BF0055B1B1 /* CodeTrevor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
