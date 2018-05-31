@@ -13,9 +13,9 @@ class ViewController: UIViewController {
     
     var chart: Pie = Pie()
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         view.createBackground(color: UIColor.soothingBreeze)
         
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
 
         view.addSubview(chart)
         
-        chart.scaleUp(withDuration: 0.1)
+        chart.layer.scaleUp(withDuration: 0.1)
         
         let button = TrevButton(center: CGPoint(x: view.centerX, y: view.height-80), width: 180, height: 40)
         button.color = UIColor.electronBlue
@@ -40,14 +40,7 @@ class ViewController: UIViewController {
     
     @objc func buttonPressed()
     {
-        chart.scaleUp(withDuration: 0.1)
+        chart.layer.scaleUp(withDuration: 0.1)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
