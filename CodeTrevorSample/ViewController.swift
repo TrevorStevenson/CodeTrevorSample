@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     {
         super.viewDidLoad()
         
+        print(Currency.createString(money: 123456.904))
+        
         view.createBackground(color: UIColor.soothingBreeze)
         
         chart = Pie(center: CGPoint(point: view.center, offsetX: 0, offsetY: -50), radius: 150, values: [2, 4, 2, 8, 10])
@@ -40,7 +42,7 @@ class ViewController: UIViewController {
     
     @objc func buttonPressed()
     {
-        chart.layer.scaleUp(withDuration: 0.1)
+        view.setNeedsDisplay()
     }
 }
 
