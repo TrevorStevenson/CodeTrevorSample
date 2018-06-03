@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-                
+        
         view.createBackground(color: UIColor.soothingBreeze)
         
         chart = Pie(center: CGPoint(point: view.center, offsetX: 0, offsetY: -50), radius: 150, values: [2, 4, 2, 8, 10])
@@ -36,11 +36,20 @@ class ViewController: UIViewController {
         button.titleLabel?.font = UIFont(name: "OpenSans-Regular", size: 20)
         button.addTarget(self, action: #selector(self.buttonPressed), for: .touchUpInside)
         view.addSubview(button)
+        
+        let loading = LoadingView(center: view.center, width: 150, type: .dots)
+        loading.color = UIColor.brightYarrow
+        loading.backgroundColor = UIColor.draculaOrchid
+        if let loadingFont = UIFont(name: "OpenSans-Regular", size: 24) {
+            loading.font = loadingFont
+        }
+        loading.textColor = .white
+        view.addSubview(loading)
     }
     
     @objc func buttonPressed()
     {
-        view.setNeedsDisplay()
+        print("button pressed")
     }
 }
 
